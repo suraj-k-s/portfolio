@@ -17,11 +17,11 @@ export const Skills = () => {
     <section
       id="skills"
       style={{ transform: "scale(0.9)" }}
-      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20"
+      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-x-hidden overflow-y-visible py-20"
     >
       <SkillText />
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center overflow-visible">
         {PROGRAMMING_LANGUAGES.map((skill, i) => (
           <SkillDataProvider
             key={skill.skill_name}
@@ -34,7 +34,7 @@ export const Skills = () => {
         ))}
       </div>
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center overflow-visible">
         {FRONTEND_TECHNOLOGIES.map((skill, i) => (
           <SkillDataProvider
             key={skill.skill_name}
@@ -47,7 +47,7 @@ export const Skills = () => {
         ))}
       </div>
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center overflow-visible">
         {BACKEND_TECHNOLOGIES.map((skill, i) => (
           <SkillDataProvider
             key={skill.skill_name}
@@ -60,7 +60,7 @@ export const Skills = () => {
         ))}
       </div>
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center overflow-visible">
         {DATABASE_TECHNOLOGIES.map((skill, i) => (
           <SkillDataProvider
             key={skill.skill_name}
@@ -73,7 +73,7 @@ export const Skills = () => {
         ))}
       </div>
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center overflow-visible">
         {CLOUD_HOSTING.map((skill, i) => (
           <SkillDataProvider
             key={skill.skill_name}
@@ -86,7 +86,7 @@ export const Skills = () => {
         ))}
       </div>
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center overflow-visible">
         {VERSION_CONTROL.map((skill, i) => (
           <SkillDataProvider
             key={skill.skill_name}
@@ -99,7 +99,7 @@ export const Skills = () => {
         ))}
       </div>
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center overflow-visible">
         {DEVOPS_TOOLS.map((skill, i) => (
           <SkillDataProvider
             key={skill.skill_name}
@@ -112,7 +112,7 @@ export const Skills = () => {
         ))}
       </div>
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center overflow-visible">
         {IDE_TOOLS.map((skill, i) => (
           <SkillDataProvider
             key={skill.skill_name}
